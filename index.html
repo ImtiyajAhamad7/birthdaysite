@@ -125,7 +125,9 @@
      `;
     }
     else if (daysLeft === 1) {
-      `Ek din baad tum thodi si aur pyaari ho jaogi… aur haan, thodi si buddhi bhi 😜
+      birthdayContentEl.style.display = 'none';
+      countdownEl.style.display = 'block';
+      countdownEl.textContent = `Ek din baad tum thodi si aur pyaari ho jaogi… aur haan, thodi si buddhi bhi 😜
 Lekin tumhara yeh budhapa bhi mujhe har din aur zyada pyaara lagta hai, meri jaan 💖
 Restro toh tumne book kar liya, lekin mujhe invite karna bhool gayi?  
     ${daysLeft} day${daysLeft > 1 ? 's' : ''} left🎉💖 `
@@ -138,7 +140,7 @@ Restro toh tumne book kar liya, lekin mujhe invite karna bhool gayi?
       // After birthday: you can decide what to show
       countdownEl.style.display = 'block';
       birthdayContentEl.style.display = 'none';
-      countdownEl.textContent = `Laiba ab kya birthday khtm ho gya baby ab site pr aa hi gyi ho wapis to mujhe ek snao send kr dena ekdm pyara sa❤️`;
+      countdownEl.textContent = `Laiba ab kya birthday khtm ho gya baby ab site pr aa hi gyi ho wapis to mujhe ek snap send kr dena ekdm pyara sa❤️`;
     }
 
     // Toggle timeline on button click
