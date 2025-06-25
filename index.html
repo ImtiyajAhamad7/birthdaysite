@@ -11,7 +11,14 @@
 </head>
 
 <body>
+ <!-- Countdown message shown before birthday -->
+  <div id="countdown" role="alert" aria-live="polite" style="display:none;"></div>
 
+  <!-- Floating Hearts Container -->
+  <div id="floating-hearts" aria-hidden="true"></div>
+
+  <!-- Confetti Canvas -->
+  <canvas id="confetti-canvas" aria-hidden="true"></canvas>
   <div class="container" id="birthdayContent" style="display:none;">
     <!-- 3D Flip Birthday Card -->
     <div class="flip-card" tabindex="0" aria-label="Birthday card for Laiba, flip to see message">
@@ -175,14 +182,7 @@
   </div>
 </div>
 
-  <!-- Countdown message shown before birthday -->
-  <div id="countdown" role="alert" aria-live="polite" style="display:none;"></div>
-
-  <!-- Floating Hearts Container -->
-  <div id="floating-hearts" aria-hidden="true"></div>
-
-  <!-- Confetti Canvas -->
-  <canvas id="confetti-canvas" aria-hidden="true"></canvas>
+ 
 
   <script>
     // Date check logic
