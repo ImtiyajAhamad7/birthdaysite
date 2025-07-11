@@ -225,16 +225,17 @@ Lekin tumhara yeh budhapa bhi mujhe har din aur zyada pyaara lagta hai, meri jaa
 Restro toh tumne book kar liya, lekin mujhe invite karna bhool gayi?  
     ${daysLeft} day${daysLeft > 1 ? 's' : ''} left🎉💖 `
     }
-    else if (daysLeft === 0) {
+    else  {
       // On birthday: show all content
       countdownEl.style.display = 'none';
       birthdayContentEl.style.display = 'block';
-    } else {
-      // After birthday: you can decide what to show
-      countdownEl.style.display = 'block';
-      birthdayContentEl.style.display = 'none';
-      countdownEl.textContent = `Laiba ab kya birthday khtm ho gya baby ab site pr aa hi gyi ho wapis to mujhe ek snap send kr dena ekdm pyara sa❤️`;
     }
+    // else {
+    //   // After birthday: you can decide what to show
+    //   countdownEl.style.display = 'block';
+    //   birthdayContentEl.style.display = 'none';
+    //   countdownEl.textContent = `Laiba ab kya birthday khtm ho gya baby ab site pr aa hi gyi ho wapis to mujhe ek snap send kr dena ekdm pyara sa❤️`;
+    // }
 
     // Toggle timeline on button click
     if (showTimelineBtn) {
